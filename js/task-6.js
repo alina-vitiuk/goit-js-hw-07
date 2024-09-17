@@ -8,12 +8,10 @@ buttonCreate.addEventListener('click', () => {
   const valueMax = Number(numberValue.max);
   const valueMin = Number(numberValue.min);
 
-  // check if the input number is greater than 100 or less than 1
   if (amount >= valueMin && amount <= valueMax) {
     createBoxes(amount);
   }
 
-  // clear the input field
   numberValue.value = '';
 });
 
